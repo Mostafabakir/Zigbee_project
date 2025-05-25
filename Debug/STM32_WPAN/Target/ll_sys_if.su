@@ -1,0 +1,6 @@
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Drivers/STM32WBAxx_HAL_Driver/Inc/stm32wbaxx_ll_rcc.h:1817:26:LL_RCC_RADIO_GetSleepTimerClockSource	4	static
+../STM32_WPAN/Target/ll_sys_if.c:81:6:ll_sys_bg_process_init	8	static
+../STM32_WPAN/Target/ll_sys_if.c:92:6:ll_sys_schedule_bg_process	8	static
+../STM32_WPAN/Target/ll_sys_if.c:102:6:ll_sys_schedule_bg_process_isr	8	static
+../STM32_WPAN/Target/ll_sys_if.c:112:6:ll_sys_config_params	8	static
+../STM32_WPAN/Target/ll_sys_if.c:137:6:ll_sys_sleep_clock_source_selection	16	static

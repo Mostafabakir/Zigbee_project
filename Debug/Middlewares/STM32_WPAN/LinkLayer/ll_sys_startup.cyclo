@@ -1,0 +1,3 @@
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Middlewares/ST/STM32_WPAN/link_layer/ll_sys/src/ll_sys_startup.c:67:6:ll_sys_mac_cntrl_init	1
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Middlewares/ST/STM32_WPAN/link_layer/ll_sys/src/ll_sys_startup.c:79:6:ll_sys_thread_init	1
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Middlewares/ST/STM32_WPAN/link_layer/ll_sys/src/ll_sys_startup.c:91:13:ll_sys_dependencies_init	2

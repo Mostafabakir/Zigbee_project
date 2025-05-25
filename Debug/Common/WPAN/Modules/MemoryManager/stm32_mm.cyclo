@@ -1,0 +1,4 @@
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c:181:8:UTIL_MM_GetBuffer	11
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c:338:6:UTIL_MM_ReleaseBuffer	4
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c:409:6:UTIL_MM_Init	2
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c:463:13:prvInsertBlockIntoFreeList	6

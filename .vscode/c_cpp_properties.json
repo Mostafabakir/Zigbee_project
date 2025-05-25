@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32WBAxx/Include",
+                "${workspaceFolder}/Drivers/STM32WBAxx_HAL_Driver/Inc",
+                "${workspaceFolder}/Middlewares/ST/STM32_WPAN/zigbee/stack/include",
+                "${workspaceFolder}/Middlewares/ST/STM32_WPAN/zigbee/core/inc",
+                "C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Drivers/CMSIS/Device/ST/STM32WBAxx/Include",
+                "C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Drivers/STM32WBAxx_HAL_Driver/Inc",
+                "C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Middlewares/ST/STM32_WPAN/zigbee/stack/include",
+                "C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Middlewares/ST/STM32_WPAN/zigbee/core/inc"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "STM32WBA55xx"
+            ],
+            "compilerPath": "C:\\ST\\STM32CubeIDE_1.13.0\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202309131626\\tools\\bin\\arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

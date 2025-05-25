@@ -1,0 +1,17 @@
+../STM32_WPAN/App/app_zigbee_endpoint.c:123:6:APP_ZIGBEE_ApplicationInit	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:149:6:APP_ZIGBEE_ApplicationStart	3
+../STM32_WPAN/App/app_zigbee_endpoint.c:194:6:APP_ZIGBEE_PersistenceStartup	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:208:6:APP_ZIGBEE_ConfigEndpoints	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:239:6:APP_ZIGBEE_ConfigGroupAddr	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:252:6:APP_ZIGBEE_GetStartupConfig	2
+../STM32_WPAN/App/app_zigbee_endpoint.c:287:6:APP_ZIGBEE_SetNewDevice	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:301:6:APP_ZIGBEE_PrintApplicationInfo	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:328:28:APP_ZIGBEE_EslServerDisplayMessageCallback	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:376:13:UpdateEpdDisplay	2
+../STM32_WPAN/App/app_zigbee_endpoint.c:397:13:PeriodicStatusUpdateTimerCallback	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:406:13:TriggerPeriodicStatusUpdate	3
+../STM32_WPAN/App/app_zigbee_endpoint.c:457:6:APP_BSP_Button1ShortPressAction	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:471:6:APP_BSP_Button1LongPressAction	1
+../STM32_WPAN/App/app_zigbee_endpoint.c:481:13:PerformFactoryReset	2
+../STM32_WPAN/App/app_zigbee_endpoint.c:525:13:LeaveConfirmCallback	2
+../STM32_WPAN/App/app_zigbee_endpoint.c:549:13:APP_ZIGBEE_HandleAttributeWrite	6

@@ -1,0 +1,4 @@
+C:/Users/2024/STM32Cube/Repository/STM32Cube_FW_WBA_V1.6.1/Middlewares/ST/STM32_WPAN/zigbee/include/zcl/zcl.h:1089:1:ZbZclClusterSetCallbackArg	1
+../STM32_WPAN/App/esl_cluster.c:52:23:ZbZclEslServerAlloc	4
+../STM32_WPAN/App/esl_cluster.c:127:21:ZbZclEslServerSendPeriodicStatusUpdate	1
+../STM32_WPAN/App/esl_cluster.c:153:28:esl_cluster_handler	23
