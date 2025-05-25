@@ -74,22 +74,16 @@ struct ZbZclClusterT* ZbZclEslServerAlloc(struct ZigBeeT *zb, uint8_t endpoint, 
     /* Setup PeriodicUpdateInterval attribute */
     esl_server_attr_list[0].attributeId = ZCL_ESL_ATTR_PERIODIC_UPDATE_INTERVAL;
     esl_server_attr_list[0].dataType = ZCL_DATATYPE_UNSIGNED_16BIT;
-    esl_server_attr_list[0].flags = ZCL_ATTR_FLAG_WRITABLE | ZCL_ATTR_FLAG_REPORTABLE | ZCL_ATTR_FLAG_CB_READ | ZCL_ATTR_FLAG_CB_WRITE;
-    esl_server_attr_list[0].customValSz = sizeof(uint16_t);
-    esl_server_attr_list[0].range.min = 1;         /* Minimum 1 second */
-    esl_server_attr_list[0].range.max = 3600;      /* Maximum 1 hour */
-    esl_server_attr_list[0].reporting.interval_min = 1;    /* 1 second minimum */
-    esl_server_attr_list[0].reporting.interval_max = 3600; /* 1 hour maximum */
+    esl_server_attr_list[0].flags = ZCL_ATTR_FLAG_WRITABLE | ZCL_ATTR_FLAG_REPORTABLE;
+    esl_server_attr_list[0].data.uint16 = esl_attr_periodic_update_interval;
+    esl_server_attr_list[0].dataLength = sizeof(uint16_t);
 
     /* Setup LastUpdateStatus attribute */
     esl_server_attr_list[1].attributeId = ZCL_ESL_ATTR_LAST_UPDATE_STATUS; 
     esl_server_attr_list[1].dataType = ZCL_DATATYPE_ENUMERATION_8BIT;
-    esl_server_attr_list[1].flags = ZCL_ATTR_FLAG_REPORTABLE | ZCL_ATTR_FLAG_CB_READ;
-    esl_server_attr_list[1].customValSz = sizeof(uint8_t);
-    esl_server_attr_list[1].range.min = 0;         /* Update status min value */
-    esl_server_attr_list[1].range.max = 5;         /* Update status max value - adjust based on your status enum */
-    esl_server_attr_list[1].reporting.interval_min = 0;    /* Report immediately on change */
-    esl_server_attr_list[1].reporting.interval_max = 300;  /* Report at least every 5 minutes */
+    esl_server_attr_list[1].flags = ZCL_ATTR_FLAG_REPORTABLE;
+    esl_server_attr_list[1].data.uint8 = esl_attr_last_update_status;
+    esl_server_attr_list[1].dataLength = sizeof(uint8_t);
 
     /* Register attributes */
     /* Register attributes */
@@ -103,7 +97,10 @@ struct ZbZclClusterT* ZbZclEslServerAlloc(struct ZigBeeT *zb, uint8_t endpoint, 
     /* Set the cluster's callback argument */
     ZbZclClusterSetCallbackArg(cluster, callbacks);
 
-    /* Register the cluster's command handler */
+    /* Set command handler */
+    cluster->handler = esl_cluster_handler;
+
+    /* Register the cluster endpoint */
     status = ZbZclClusterEndpointRegister(cluster);
     if (status != ZCL_STATUS_SUCCESS) {
         LOG_ERROR_APP("Failed to register ESL command handler: %d", status);
